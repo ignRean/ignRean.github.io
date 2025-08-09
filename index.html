@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehaan's-Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/Logov1.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-gradient-orb orb-1"></div>
+        <div class="bg-gradient-orb orb-2"></div>
+        <div class="bg-gradient-orb orb-3"></div>
+    </div>
+    <div class="grid-pattern"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Command Palette -->
+    <div class="command-palette" id="commandPalette">
+        <input type="text" class="command-search" placeholder="Type a command or search..." id="commandInput">
+        <div class="command-list" id="commandList">
+            <div class="command-item" data-action="home">
+                <span>🏠</span>
+                <span>Go to Home</span>
+            </div>
+            <div class="command-item" data-action="skills">
+                <span>⚡</span>
+                <span>View Skills</span>
+            </div>
+            <div class="command-item" data-action="projects">
+                <span>🚀</span>
+                <span>See Projects</span>
+            </div>
+            <div class="command-item" data-action="contact">
+                <span>📧</span>
+                <span>Contact Me</span>
+            </div>
+            <div class="command-item" data-action="theme">
+                <span>🌙</span>
+                <span>Toggle Theme</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+            <div class="cmd-trigger" id="cmdTrigger">⌘K</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="images/profile.jpeg" alt="Profile" class="profile-image">
+            </div>
+            <div class="hero-greeting">Hello, I'm</div>
+            <h1 class="hero-name">Rehaan Mohiuddin Mohammed</h1>
+            <div class="hero-titles">
+                <span class="typing-text" id="typingText">Software Developer</span>
+                <span class="cursor"></span>
+            </div>
+            <p class="hero-description">
+                Passionate about building creative and functional digital solutions. I aspire to become a professional Software Engineer or Game Developer, solving problems and continuously learning new technologies.
+            </p>
+            <a href="#projects" class="hero-view">
+                <span>View My Work</span>
+                <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title fade-in">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card fade-in">
+                <h3>Frontend Development</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">HTML5 & CSS3</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.9; --delay: 0.1s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.75; --delay: 0.2s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <span class="skill-level">Learning</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.5; --delay: 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <h3>Backend & Database</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.85; --delay: 0.1s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.7; --delay: 0.2s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-level">Learning</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.4; --delay: 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <h3>Programming Languages</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.75; --delay: 0.1s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.65; --delay: 0.2s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C#</span>
+                        <span class="skill-level">Learning</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.45; --delay: 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <h3>Game Development</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Unity</span>
+                        <span class="skill-level">Learning</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.5; --delay: 0.1s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Game Design</span>
+                        <span class="skill-level">Beginner</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.35; --delay: 0.2s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">2D/3D Graphics</span>
+                        <span class="skill-level">Beginner</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.3; --delay: 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <h3>Tools & Technologies</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.85; --delay: 0.1s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">VS Code</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.9; --delay: 0.2s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Docker</span>
+                        <span class="skill-level">Learning</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.4; --delay: 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card fade-in">
+                <h3>Soft Skills</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Problem Solving</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.9; --delay: 0.1s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Team Collaboration</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.75; --delay: 0.2s;"></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Communication</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-fill" style="--width: 0.7; --delay: 0.3s;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-container fade-in">
+            <div class="projects-carousel" id="projectsCarousel">
+                <div class="project-card">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        A responsive personal portfolio website built with modern HTML, CSS, and JavaScript. Features smooth animations, dark mode toggle, and a command palette navigation system.
+                    </p>
+                    <a href="https://github.com/ignRean/Portfolio-website" class="project-link" target="_blank">
+                        <span>View Project</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Inventory Management System</h3>
+                    <p class="project-description">
+                      A comprehensive Inventory Management System built entirely with python. It is a Solution for handeling Products, suppliers and orders.
+                    </p>
+                    <a href="https://github.com/Musteab/Inventory-management" class="project-link" target="_blank">
+                        <span>View Project</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Mental Health Website</h3>
+                    <p class="project-description">
+                        A demo Mental Health webssite to showcase our skills in HTML, CSS, and JavaScript. It includes a user-friendly interface with resources and articles on mental health topics.
+                    </p>
+                    <a href="https://github.com/Musteab/Webfinalassignment" class="project-link" target="_blank">
+                        <span>View Project</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">A Cool Pokemon game</h3>
+                    <p class="project-description">
+                        A fun and simple Pokemom game built entirely out of Java for Pokemon lovers
+                    </p>
+                    <a href="https://github.com/69sxjid/OOP-Project" class="project-link" target="_blank">
+                        <span>View Project</span>
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="section-title fade-in">Let's Connect</h2>
+            <p class="hero-description fade-in">
+                I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and development.
+            </p>
+            
+            <form class="contact-form fade-in" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+
+            <div class="social-links fade-in">
+                <a href="https://www.instagram.com/rean__06/" class="social-link" title="Instagram" target="_blank">
+                    <span style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                      <img src="images/Instagram_icon.png" alt="" height="30px" style="display: block; margin: 0 auto;">
+                    </span>
+                </a>
+                <a href="https://github.com/ignRean" class="social-link" title="GitHub" target="_blank">
+                    <span style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                      <img src="images/Github_Icon.png" alt="" height="30px" style="display: block; margin: 0 auto;">
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/mohd-rehaan-a8b16533a/" class="social-link" title="LinkedIn" target="_blank">
+                   <span style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                      <img src="images/Linkedin_Icon.png" alt="" height="50px" style="display: block; margin: 0 auto;">
+                    </span>
+                </a>
+                <a href="https://x.com/Rean__06" class="social-link" title="X.com" target="_blank">
+                     <span style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                      <img src="images/X_icon.svg.png" alt="" height="29px" style="display: block; margin: 0 auto;">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Rehaan Mohiuddin Mohammed. All rights reserved.</p>
+            <p>Built using HTML, CSS, and JavaScript.</p>
+        </div>
+
+    
+   </main>
+   <script src="Script.js"></script>
+</body>
+</html>
